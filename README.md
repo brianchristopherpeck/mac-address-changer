@@ -22,10 +22,12 @@ Options:
 ```
 sudo python mac_changer.py -o Mac -i en0 -m 00:11:22:33:44:22
 ```
+#### Mac Address will be cloaked on requests but will still show original system Mac Address in settings
 
 ## Example command for Linux
 ```
 sudo python mac_changer.py -o Linux -i eth0 -m 00:11:22:33:44:22
 ```
+#### Mac Address will be cloaked on requests but will still show original system Mac Address in settings
 
 ### Currently does NOT work for Windows systems
