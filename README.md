@@ -39,3 +39,7 @@ ifconfig eth0 | grep ether
 ```
 
 ### Currently does NOT work for Windows systems
+
+#### ToDo:
+1. Integrate Windows OS Functionality
+2. Allow for random MAC Address creation
