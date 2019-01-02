@@ -1,7 +1,9 @@
 #!/usr/bin/env python
-
+# Subprocess allows shell access
 import subprocess
+# Optperse allows options in cli
 import optparse
+# Re Third Party regex module
 import re
 
 # Create command line arguments to be consumed by program
@@ -40,7 +42,7 @@ def c_mac(os, interface, new_mac_address):
 # Get the current MAC address
 def g_c_mac(interface):
 	ifconfig_result = subprocess.check_output(["ifconfig", interface])
-	re_result = re.search(r"[0-9a-fA-F]:?){12}", ifconfig_result)
+	re_result = re.search(r"([0-9a-fA-F]:?){12}", ifconfig_result)
 	if re_result:
 		return re_result.group(0)
 	else:
